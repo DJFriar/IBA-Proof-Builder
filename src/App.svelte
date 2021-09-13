@@ -34,7 +34,7 @@
           <input class="uk-input" id="MailingAddress" type="text" bind:value={MailingAddress}>
         </div>
         <div class="uk-width-1-3@s">
-          <label class="uk-form-label" for="IBANum">IBA Number</label>
+          <label class="uk-form-label" for="IBANum">IBA Number<i class="infoIcon fal fa-info-circle" uk-tooltip="If this is your first submission, enter 'NEW' in this field."></i></label>
           <input class="uk-input" id="IBANum" type="text" bind:value={IBANum}>
         </div>
         <div class="uk-width-1-3@s">
@@ -50,7 +50,7 @@
           <input class="uk-input" id="PhoneNum" type="text" bind:value={PhoneNum}>
         </div>
         <div class="uk-width-1-1@s">
-          <label class="uk-form-label" for="BikeMakeModel">Motorcycle Make/Model</label>
+          <label class="uk-form-label" for="BikeMakeModel">Motorcycle Make/Model<i class="infoIcon fal fa-info-circle" uk-tooltip="This hsould be in the form of Year Make Model, ie '2018 Honda Gold Wing'."></i></label>
           <input class="uk-input" id="BikeMakeModel" type="text" bind:value={BikeMakeModel}>
         </div>
       </div>
@@ -59,7 +59,7 @@
       <h4>Ride Info</h4>
       <div class="uk-grid-small" uk-grid>
         <div class="uk-width-1-1@s">
-          <label class="uk-form-label" for="RideName">Ride Attempted</label>
+          <label class="uk-form-label" for="RideName">Ride Attempted<i class="infoIcon fal fa-info-circle" uk-tooltip="Be very specific, ie 'Texas In-State SaddleSore 1000', or 'SaddleSore 2000 Gold', etc."></i></label>
           <input class="uk-input" id="RideName" type="text" bind:value={RideName}>
         </div>
         <div class="uk-width-1-2@s">
@@ -67,15 +67,15 @@
           <input class="uk-input" id="StartDate" type="text" bind:value={StartDate}>
         </div>
         <div class="uk-width-1-2@s">
-          <label class="uk-form-label" for="PayPalTransID">PayPal Transaction ID</label>
+          <label class="uk-form-label" for="PayPalTransID">PayPal Transaction ID<i class="infoIcon fal fa-info-circle" uk-tooltip="You must have paid with PayPal first before submitting your application."></i></label>
           <input class="uk-input" id="PayPalTransID" type="text" bind:value={PayPalTransID}>
         </div>
         <div class="uk-width-1-2@s">
-          <label class="uk-form-label" for="OdoMiles">Odometer Miles</label>
+          <label class="uk-form-label" for="OdoMiles">Odometer Miles<i class="infoIcon fal fa-info-circle" uk-tooltip="The mileage as shown on your motorcycle's odometer."></i></label>
           <input class="uk-input" id="OdoMiles" type="text" bind:value={OdoMiles}>
         </div>
         <div class="uk-width-1-2@s">
-          <label class="uk-form-label" for="GPSMiles">GPS Miles</label>
+          <label class="uk-form-label" for="GPSMiles">GPS Miles<i class="infoIcon fal fa-info-circle" uk-tooltip="The mileage as calculated when you plotted your stops on an online map."></i></label>
           <input class="uk-input" id="GPSMiles" type="text" bind:value={GPSMiles}>
         </div>
         <div class="uk-width-1-2@s">
@@ -83,15 +83,15 @@
           <input class="uk-input" id="MapLink" type="text" bind:value={MapLink}>
         </div>
         <div class="uk-width-1-2@s">
-          <label class="uk-form-label" for="SpotwallaLink">Link to Spotwalla Trip</label>
+          <label class="uk-form-label" for="SpotwallaLink">Link to <a href="https://new.spotwalla.com" target="_blank">Spotwalla</a> Trip<i class="infoIcon fal fa-info-circle" uk-tooltip="This tool requires you use Spotwalla. There is zero reason for you not to use it."></i></label>
           <input class="uk-input" id="SpotwallaLink" type="text" bind:value={SpotwallaLink}>
         </div>
         <div class="uk-width-1-2@s">
-          <label class="uk-form-label" for="StartCity">Starting City</label>
+          <label class="uk-form-label" for="StartCity">Starting City<i class="infoIcon fal fa-info-circle" uk-tooltip="Enter this exactly how you want it to appear on your cert."></i></label>
           <input class="uk-input" id="StartCity" type="text" bind:value={StartCity}>
         </div>
         <div class="uk-width-1-2@s">
-          <label class="uk-form-label" for="EndCity">Ending City</label>
+          <label class="uk-form-label" for="EndCity">Ending City<i class="infoIcon fal fa-info-circle" uk-tooltip="Enter this exactly how you want it to appear on your cert."></i></label>
           <input class="uk-input" id="EndCity" type="text" bind:value={EndCity}>
         </div>
         <div class="uk-width-1-1@s">

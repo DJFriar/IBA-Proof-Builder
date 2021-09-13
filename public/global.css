@@ -67,3 +67,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75em;
 }
+
+.infoIcon {
+  margin-left: 4px;
+}
