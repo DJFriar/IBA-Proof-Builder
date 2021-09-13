@@ -19,7 +19,7 @@
 </script>
 
 <main>
-  <p>Fill out all the forms below. Once completed, copy/paste the bottom text into your submission email.</p>
+  <p>Fill out all the fields below. Once completed, copy/paste the bottom text into your submission email.</p>
   <p>Note: This is NOT an offically sanctioned app, it is simply intended to make your data as clean as possible, and to ensure that all the info a scorer needs is present to give you the fastest  possible approval time.</p>
   <div class="uk-grid-small uk-child-width-expand" uk-grid>
     <div>
