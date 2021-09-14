@@ -16,6 +16,7 @@
   let PayPalTransID = "";
   let StartDate = "";
   let OtherNotes = "";
+  let Discrepancy = "";
 </script>
 
 <main>
@@ -78,6 +79,12 @@
           <label class="uk-form-label" for="GPSMiles">GPS Miles<i class="infoIcon fal fa-info-circle" uk-tooltip="The mileage as calculated when you plotted your stops on an online map."></i></label>
           <input class="uk-input" id="GPSMiles" type="text" bind:value={GPSMiles}>
         </div>
+        {#if (OdoMiles - GPSMiles > 30) || (GPSMiles - OdoMiles > 30)}
+          <div class="uk-width-1-1@s">
+            <label class="uk-form-label" for="Discrepancy">Explanation for distance discrepancy</label>
+            <input class="uk-input" id="Discrepancy" type="text" bind:value={Discrepancy}>
+          </div>
+        {/if}
         <div class="uk-width-1-2@s">
           <label class="uk-form-label" for="MapLink">Link to Online Map</label>
           <input class="uk-input" id="MapLink" type="text" bind:value={MapLink}>
@@ -135,6 +142,9 @@
     {/if}
     {#if GPSMiles}
       <p><strong>GPS miles:</strong> {GPSMiles}</p>
+    {/if}
+    {#if Discrepancy}
+      <p><strong>Please explain why there is a more than 30 mile difference between GPS and Odometer:</strong> {Discrepancy}</p>
     {/if}
     {#if MapLink}
       <p><strong>Link to online map:</strong> {MapLink}</p>
