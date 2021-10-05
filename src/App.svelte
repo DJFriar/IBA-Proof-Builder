@@ -2,6 +2,7 @@
 	let FullName = "";
   let IBANum = "";
   let PhoneNum = "";
+  let Email ="";
   let Age = "";
   let Gender = "";
   let MailingAddress = "";
@@ -20,7 +21,7 @@
 </script>
 
 <main>
-  <p>Fill out all the fields below. Once completed, copy/paste the bottom text into your submission email.</p>
+  <p>Fill out <strong>ALL</strong> the fields below. Once completed, copy/paste the bottom text into your submission email.</p>
   <p>Note: This is NOT an offically sanctioned app, it is simply intended to make your data as clean as possible, and to ensure that all the info a scorer needs is present to give you the fastest  possible approval time.</p>
   <div class="uk-grid-small uk-child-width-expand" uk-grid>
     <div>
@@ -51,7 +52,11 @@
           <input class="uk-input" id="PhoneNum" type="text" bind:value={PhoneNum}>
         </div>
         <div class="uk-width-1-1@s">
-          <label class="uk-form-label" for="BikeMakeModel">Motorcycle Make/Model<i class="infoIcon fal fa-info-circle" uk-tooltip="This hsould be in the form of Year Make Model, ie '2018 Honda Gold Wing'."></i></label>
+          <label class="uk-form-label" for="Email">Contact Email Address</label>
+          <input class="uk-input" id="Email" type="text" bind:value={Email}>
+        </div>
+        <div class="uk-width-1-1@s">
+          <label class="uk-form-label" for="BikeMakeModel">Motorcycle Make/Model<i class="infoIcon fal fa-info-circle" uk-tooltip="This should be in the form of Year Make Model, ie '2018 Honda Gold Wing'."></i></label>
           <input class="uk-input" id="BikeMakeModel" type="text" bind:value={BikeMakeModel}>
         </div>
       </div>
@@ -113,11 +118,20 @@
     {#if RideName}
       <p><strong>Ride are you applying for:</strong> {RideName}</p>
     {/if}
+    {#if StartDate}
+      <p><strong>Date of ride start:</strong> {StartDate}</p>
+    {/if}
+    {#if FullName}
+      <p><strong>Name you want on the certificate:</strong> {FullName}</p>
+    {/if}
     {#if MailingAddress}
       <p><strong>Address to mail the certificate to:</strong> {MailingAddress}</p>
     {/if}
     {#if PhoneNum}
       <p><strong>Contact phone number:</strong> {PhoneNum}</p>
+    {/if}
+    {#if Email}
+      <p><strong>Contact email address:</strong> {Email}</p>
     {/if}
     {#if IBANum}
       <p><strong>Are you a NEW or EXISTING IBA member:</strong> EXISTING ({IBANum})</p>
@@ -127,12 +141,6 @@
     {/if}
     {#if Gender}
       <p><strong>Gender:</strong> {Gender}</p>
-    {/if}
-    {#if StartDate}
-      <p><strong>Date of ride start:</strong> {StartDate}</p>
-    {/if}
-    {#if FullName}
-      <p><strong>Name you want on the certificate:</strong> {FullName}</p>
     {/if}
     {#if BikeMakeModel}
       <p><strong>Motorcycle Make/Model:</strong> {BikeMakeModel}</p>
@@ -160,6 +168,13 @@
     {/if}
     {#if PayPalTransID}
       <p><strong>PayPal Transaction ID:</strong> {PayPalTransID}</p>
+    {/if}
+    {#if OtherNotes}
+      <p><strong>Additional Notes:</strong> {OtherNotes}</p>
+    {/if}
+    {#if FullName}
+      <p>I certify that the statements in this application for certification are true to the best of my knowledge and belief.</p>
+      <p>{FullName}</p>
     {/if}
   </div>	
 </main>
